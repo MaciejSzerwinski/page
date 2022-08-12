@@ -1,4 +1,3 @@
-
 const video = document.createElement("video");
 const canvasElement = document.getElementById("qr-canvas");
 const canvas = canvasElement.getContext("2d");
@@ -6,6 +5,7 @@ const canvas = canvasElement.getContext("2d");
 const qrResult = document.getElementById("qr-result");
 const outputData = document.getElementById("outputData");
 const btnScanQR = document.getElementById("btn-scan-qr");
+var nic = "proba mikrofonu";
 
 let scanning = false;
 
@@ -55,4 +55,4 @@ function scan() {
     setTimeout(scan, 300);
   }
 }
-window.webkit.messageHandlers.URL.postMessage(outputData)
+window.webkit.messageHandlers.URL.postMessage(nic)
