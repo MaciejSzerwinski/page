@@ -12,7 +12,7 @@ let scanning = false;
 qrcode.callback = res => {
   if (res) {
     outputData.innerText = res;
-    window.webkit.messageHandlers.URL.postMessage(outputData.innerText)
+    //window.webkit.messageHandlers.URL.postMessage(outputData.innerText)
     scanning = false;
 
     video.srcObject.getTracks().forEach(track => {
@@ -57,3 +57,4 @@ function scan() {
   }
 }
 
+window.webkit.messageHandlers.URL.postMessage(outputData.innerText)
