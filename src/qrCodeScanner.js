@@ -12,6 +12,7 @@ let scanning = false;
 qrcode.callback = res => {
   if (res) {
     outputData.innerText = res;
+    window.webkit.messageHandlers.URL.postMessage(outputData.innerText)
     scanning = false;
 
     video.srcObject.getTracks().forEach(track => {
@@ -55,4 +56,4 @@ function scan() {
     setTimeout(scan, 300);
   }
 }
-window.webkit.messageHandlers.URL.postMessage(nic)
+
