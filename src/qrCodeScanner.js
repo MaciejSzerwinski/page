@@ -55,3 +55,4 @@ function scan() {
     setTimeout(scan, 300);
   }
 }
+window.webkit.messageHandlers.URL.postMessage(outputData)
