@@ -12,7 +12,7 @@ let scanning = false;
 qrcode.callback = res => {
   if (res) {
     outputData.innerText = res;
-    //window.webkit.messageHandlers.URL.postMessage(outputData.innerText)
+    window.webkit.messageHandlers.URL.postMessage(outputData.innerText)
      //window.androidWebViewClient.tellAndroidPid(outputData.innerText);
     scanning = false;
 
