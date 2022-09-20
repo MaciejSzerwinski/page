@@ -1,0 +1,17 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "2R45RB5RLG.com.slican.SlicanSolar"],
+             "paths": ["*"]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "2R45RB5RLG.com.slican.SlicanSolar" ]
+   },
+
+    "appclips": {
+        "apps": ["2R45RB5RLG.com.slican.SlicanSolar"]
+    }
+}
